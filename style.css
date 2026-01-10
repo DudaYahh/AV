@@ -292,10 +292,49 @@ footer {
   }
   /* CARDS */
   .cards-servicos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 lado a lado */
-    gap: 30px;
-    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .card-servico {
+    background: #fff;
+    border: 2px solid #3a693e; /* cor da borda verde */
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card-servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-icon {
+    width: 80px;
+    height: 80px;
+    background: #3a693e; /* círculo verde */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+  }
+
+  .card-icon img {
+    width: 120%;
+    height: 120%;
+    object-fit: contain;
+  }
+
+  .card-servico p {
+    color: #3a693e;
+    font-weight: 500;
+    line-height: 1.4;
   }
   /* LISTA DIFERENCIAL */
   .lista li {
@@ -327,5 +366,6 @@ footer p {
 .card p {
   text-align: justify;
 }
+
 
 
