@@ -347,6 +347,7 @@ footer {
   }
   /* FOOTER */
   footer {
+      background: linear-gradient(135deg, #5a94eb, #198754);
     font-size: 0.85rem;
   }
   /* WHATSAPP FLOAT */
@@ -366,6 +367,7 @@ footer p {
 .card p {
   text-align: justify;
 }
+
 
 
 
