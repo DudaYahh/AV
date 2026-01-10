@@ -214,7 +214,7 @@ a.meu-link:active {
 
 /* FOOTER */
 footer {
-  background: #0b5ed7;
+  background: linear-gradient(135deg, #5a94eb, #198754);
   color: #fff;
   padding: 15px;
   text-align: center;
@@ -367,6 +367,7 @@ footer p {
 .card p {
   text-align: justify;
 }
+
 
 
 
