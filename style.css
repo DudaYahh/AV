@@ -65,45 +65,22 @@ nav a {
 }
 
 /* CARDS */
-/* Link normal */
-a.meu-link {
-  color: #3a693e; /* cor do link */
-  text-decoration: none; /* remove o sublinhado se quiser */
+.cards-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-/* Link quando o mouse passa por cima */
-a.meu-link:hover {
-  color: rgb(1, 41, 19); /* cor ao passar o mouse */
-  text-decoration: underline; /* opcional, adiciona sublinhado no hover */
-}
-
-/* Link visitado */
-a.meu-link:visited {
-  color: rgb(30, 66, 44); /* cor depois de o usuário ter clicado */
-}
-
-/* Link ativo (quando clicado) */
-a.meu-link:active {
-  color: rgb(32, 68, 32); /* cor no momento do clique */
-}
-
-/* RESPONSIVO - NOSSOS SERVIÇOS */
-@media (max-width: 768px) {
-  .cards-servicos {
-    display: grid;
-    grid-template-columns: 1fr; /* 1 card por linha no celular */
-    gap: 20px;
-    margin-top: 30px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .cards-servicos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 cards lado a lado em tablets */
-    gap: 20px;
-    margin-top: 30px;
-  }
+.card-servico {
+  background: #fff;
+  border: 2px solid #3a693e; /* cor da borda verde */
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  width: 220px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card-servico:hover {
@@ -350,3 +327,4 @@ footer p {
 .card p {
   text-align: justify;
 }
+
